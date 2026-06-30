@@ -1,4 +1,4 @@
-# ffn_solvers
+# Instructions
 FFN MHD solvers
 
 1. Where the files go
