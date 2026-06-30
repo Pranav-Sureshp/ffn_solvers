@@ -1,0 +1,3 @@
+mhdFoam.C
+
+LIB = $(FOAM_USER_LIBBIN)/libMhdSolver
