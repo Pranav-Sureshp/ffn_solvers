@@ -50,6 +50,7 @@ nm -D $FOAM_USER_LIBBIN/libMhdSolver.so | grep -i mhd
 4. Update GeN-Foam's Make/options to link the new lib
 Add the include path back (this one is needed now, since mhdFoam is its own separate header tree no longer reachable via -lOFSolvers's shared include dir):
 ```
+cd foamForNuclear/applications/solvers/GeN-Foam
 -I./../../modules/openFoamImported/mhdFoam/lnInclude
 ```
 
@@ -62,6 +63,7 @@ And add the library to `EXE_LIBS`, alongside the others:
 Then rebuild GeN-Foam itself:
 ```
 cd .../applications/solvers/GeN-Foam
+wclean
 wmake
 ```
 
